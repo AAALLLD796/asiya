@@ -1,0 +1,17 @@
+local part = workspace.Part -- BodyVelocity
+
+-- BodyVelocity
+local bodyVelocity = Instance.new("BodyVelocity")
+bodyVelocity.MaxForce = Vector3.new(10000, 10000, 10000)
+bodyVelocity.Velocity = Vector3.new(0, 100, 0) 
+bodyVelocity.Parent = part
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+-- BodyVelocity
+local bodyVelocity = Instance.new("BodyVelocity")
+bodyVelocity.MaxForce = Vector3.new(10000, 10000, 10000) 
+bodyVelocity.Velocity = Vector3.new(0, 100, 0)
+bodyVelocity.Parent = humanoidRootPart
