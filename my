@@ -1,0 +1,59 @@
+--local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/AAALLLD796/asiya/refs/heads/main/monohito"))()
+local Window = OrionLib:MakeWindow({Name = Asi", HidePremium = false, introText = "Asi", SaveConfig = true, ConfigFolder = "Asi"})
+
+OrionLib:MakeNotification({
+  Name = "HEY"
+  Correct = "Im Asi!",
+  Image = "rbxassetid://448345998",
+  Time = 5
+  )}
+
+  
+local TutTab = Window:MakeTab({
+　Name = "Asi",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnry = false
+  })
+
+local Section = TutTab:AddSection({
+  Name = "Asi Section"
+)}
+
+TutTab:AddButton({
+  Name = "Button!",
+  Callback = function()
+          print("Asinoscript")
+    end
+  })  
+
+TutTab:AddToggle({
+  Name = "Toggle!",
+ Default = false,
+  Callback = function(Value)
+    print("Asidaze")
+  end
+})
+
+TutTab:AddColorpiker",
+  Name = "Asi"
+Default = Color3.fromRGB(255,0,0),
+Callback = function(Value)
+  print(Value)
+end 
+})
+
+TutTab:AddSlider({
+  Name = "Asi",
+  min =　0,
+  max = 20,
+  Default = 5,
+  Color = Color3.fromRGB(255,255,255),
+  Increment = 1,
+  ValueName = "bananas",
+  Callback =　function(Value)
+    print(Value)
+  end
+})
+
+end
+OrionLib:Init()
